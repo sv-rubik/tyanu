@@ -1,0 +1,22 @@
+PASS valid torrent is imported
+PASS metadata name is read
+PASS pause reaches the native engine
+PASS automatic resume is disabled
+PASS file selection reaches native priorities
+PASS duplicate is rejected
+PASS invalid magnet is rejected
+PASS corrupt torrent is rejected
+PASS empty selection is rejected
+PASS resume reaches native engine
+PASS session and pause restore after process restart
+PASS file selection restores after restart
+PASS native resume data is persisted
+PASS network reconnect preserves manual pause
+PASS native hash recheck validates existing selected bytes
+PASS magnet export includes correct infohash
+PASS remove clears session
+PASS remove leaves downloaded bytes intact
+PASS remove clears saved entry
+PASS valid magnet is imported
+PASS magnet honors initial pause
+ALL 21 NATIVE STATE CHECKS PASSED; libtorrent 2.1.0.0

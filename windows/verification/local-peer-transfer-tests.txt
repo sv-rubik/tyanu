@@ -1,0 +1,26 @@
+PASS native seed session starts
+SEED listening 38429 true state SEEDING seed true
+PASS torrent-file import accepts a file selection
+PASS new paused torrent stays paused
+PASS duplicate is rejected
+PASS invalid magnet is rejected
+STATE Поиск пиров…  size 524288
+DL PeerConnectAlert 9cf24c peer 127.0.0.1:38429 outgoing connection to peer (uTP)
+DL PeerDisconnectedAlert 9cf24c peer 127.0.0.1:38429 disconnecting (uTP) [sock_read] [asio.misc]: End of file (reason: 2)
+DL PeerConnectAlert 9cf24c peer 127.0.0.1:38429 outgoing connection to peer (uTP)
+DL PeerDisconnectedAlert 9cf24c peer 127.0.0.1:38429 disconnecting (uTP) [bittorrent] [libtorrent]: torrent finished (reason: 0)
+PASS selected file downloads from local BitTorrent peer
+PASS downloaded bytes match original
+PASS excluded file stays excluded
+PASS pause survives engine restart
+PASS file selection survives engine restart
+PASS remove clears torrent list
+PASS remove keeps downloaded files
+DL PeerConnectAlert 9cf24c peer 127.0.0.1:38429 outgoing connection to peer (uTP)
+PASS magnet retrieves real metadata from peer
+DL PeerDisconnectedAlert 9cf24c peer 127.0.0.1:38429 disconnecting (uTP) [bittorrent] [libtorrent]: torrent finished (reason: 0)
+PASS magnet downloads the complete bundle
+PASS magnet bytes match original
+PASS network gating does not override manual pause
+PASS network reconnect preserves manual pause
+ALL INTEGRATION CHECKS PASSED; libtorrent 2.1.0.0

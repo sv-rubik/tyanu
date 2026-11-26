@@ -1,0 +1,3 @@
+GUI launch and interactions tested on Linux using the same Java desktop code with FlatLaf 3.8 and Azul Zulu JRE 21.
+Verified: main window, add dialog, file selection dialog, adding a local fixture on pause, exclusion of its second file, card/details layout, complete app shutdown, restoring pause and file selection after relaunch.
+The Windows EXE was not executed on Windows or Wine. Tray and Windows firewall integration remain unverified.
