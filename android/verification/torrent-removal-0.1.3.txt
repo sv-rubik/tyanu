@@ -1,0 +1,28 @@
+PASS original descriptor reference is retained at import
+PASS default source-file option deletes original .torrent
+PASS default source-file option preserves all downloaded bytes
+PASS default source-file option preserves unrelated files
+PASS default source-file option removes the row
+PASS removed row does not return after engine restart
+PASS list-only option keeps descriptor and payload
+PASS list-only option does not request external source access
+PASS native delete-files operation removes downloaded payload
+PASS everything option deletes original descriptor and row
+PASS everything option preserves unrelated file in the same torrent subfolder
+PASS everything option does not recursively delete shared downloads folder
+PASS legacy entry requires explicit source selection
+PASS missing source reference never deletes data or row
+PASS selected original descriptor reference survives restart
+PASS legacy task can safely remove its selected descriptor
+PASS replaced source descriptor with another infohash is rejected
+PASS wrong-source rejection has no destructive side effects
+PASS explicit source selection checks the torrent infohash
+PASS provider deletion failure is surfaced
+PASS provider failure preserves descriptor, row and downloaded content
+PASS payload paths shared with another listed torrent are protected
+PASS overlap protection keeps both torrents and their shared payload
+PASS native payload-delete failure is reported
+PASS failed native deletion retains original .torrent and the row
+PASS native payload deletion can be retried after restoring access
+PASS magnet without original .torrent removes only the row in default mode
+ALL 27 TORRENT REMOVAL CHECKS PASSED

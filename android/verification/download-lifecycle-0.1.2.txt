@@ -1,0 +1,14 @@
+PASS empty startup removes the notification and releases the service
+PASS startup ends foreground ownership before releasing service lifetime
+PASS repeated idle polls never recreate the notification
+PASS resume starts foreground before work may continue after UI unbind
+PASS queued resume cannot be interrupted by an older empty snapshot
+PASS active download keeps foreground ownership
+PASS unpaused task can wait for Wi-Fi without losing its automatic continuation
+PASS pause-all action removes notification and releases the started service
+PASS viewing paused task details does not repost progress notification
+PASS explicit resume also preserves background seeding
+PASS removing the final task releases foreground and service ownership
+PASS queued reads do not create a new foreground notification
+PASS service destruction removes the foreground notification
+ALL 13 DOWNLOAD LIFECYCLE CHECKS PASSED
